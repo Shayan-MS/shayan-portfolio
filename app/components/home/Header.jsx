@@ -2,6 +2,7 @@
 import HamburgerMenuOverlay from "@/src/components/lightswind/hamburger-menu-overlay";
 import { Home, Search, User, Settings } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const menuItems = [
@@ -24,17 +25,38 @@ const Header = () => {
                 px-5 py-3 relative rounded-2xl border border-white/30 transition-all duration-500"
       >
         <ul className="flex space-x-6">
-          <li className="rounded-xl py-2 px-4 hover:bg-[#0043ff]  transition">
-            <a href="/">Home</a>
+          <li className="rounded-xl py-2 px-4 hover:bg-[#0043ff] cursor-pointer transition">
+            <Link
+              activeClass="active-link"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Home
+            </Link>
           </li>
-          <li className="rounded-xl py-2 px-4 hover:bg-[#0043ff]  transition">
-            <a href="#aboutMe">About me</a>
+          <li className="rounded-xl py-2 px-4 hover:bg-[#0043ff] cursor-pointer transition">
+            <Link
+              activeClass="active-link"
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              About Me
+            </Link>{" "}
           </li>
-          <li className="rounded-xl py-2 px-4 hover:bg-[#0043ff]  transition">
-            <a href="portfolio">Portfolio</a>
-          </li>
-          <li className="rounded-xl py-2 px-4 hover:bg-[#0043ff]  transition">
-            <a href="message">Message</a>
+          <li className="rounded-xl py-2 px-4 hover:bg-[#0043ff] cursor-pointer transition">
+            <Link
+              activeClass="active-link"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Portfolio
+            </Link>{" "}
           </li>
         </ul>
       </nav>

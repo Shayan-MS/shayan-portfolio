@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Header from "./components/Header";
 import { Typewriter } from "react-simple-typewriter";
 // import ScrollReveal from "@/src/components/lightswind/scroll-reveal";
 
@@ -16,6 +15,7 @@ import { LuArrowBigLeft, LuArrowLeft } from "react-icons/lu";
 import ScrollReveal from "@/src/components/lightswind/scroll-reveal";
 import { TypingText } from "@/src/components/lightswind/typing-text";
 import Section from "./components/ShowSectionsWithAnimate";
+import Header from "./components/home/Header";
 
 const Home = () => {
   return (
@@ -25,7 +25,10 @@ const Home = () => {
       <main>
         {/* HOME */}
         <Section>
-          <section className="relative z-0 flex flex-col items-center justify-center pt-28 pb-32 main-bg">
+          <section
+            className="relative z-0 flex flex-col items-center justify-center pt-28 pb-32 main-bg"
+            id="home"
+          >
             <div className="absolute w-full vh-100 backdrop-blur-xs"></div>
             <div className="flex relative z-10 flex-col items-center justify-between w-full lg:flex-row-reverse lg:me-14">
               <div></div>
@@ -212,7 +215,10 @@ const Home = () => {
           </section>
         </Section>
         <Section>
-          <section className="relative z-0 flex flex-col items-center justify-center pt-28 pb-32 main-bg">
+          <section
+            className="relative z-0 flex flex-col items-center justify-center pt-28 pb-32 main-bg"
+            id="portfolio"
+          >
             <div className="absolute w-full h-full backdrop-blur-xs"></div>
             <div className="flex relative z-10 flex-col items-center justify-between w-full lg:flex-row-reverse lg:me-14">
               <div></div>

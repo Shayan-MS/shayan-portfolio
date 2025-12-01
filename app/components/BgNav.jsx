@@ -5,8 +5,6 @@ export default function BgNav({ id, children, onVisible }) {
   const { ref, inView } = useInView({
     threshold: 0.4,
   });
-
-  // وقتی بخش visible شد، بخش activeNav را به parent می‌فرستیم
   useEffect(() => {
     if (inView && onVisible) {
       onVisible(id);

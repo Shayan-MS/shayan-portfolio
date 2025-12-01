@@ -26,7 +26,7 @@ const Home = () => {
         {/* HOME */}
         <Section>
           <section
-            className="relative z-0 flex flex-col items-center justify-center pt-28 pb-32 main-bg"
+            className="relative z-0 flex flex-col items-center justify-center main-bg"
             id="home"
           >
             <div className="absolute w-full vh-100 backdrop-blur-xs"></div>
@@ -226,7 +226,7 @@ const Home = () => {
                 <div className="text-center flex flex-col space-y-10 md:px-8">
                   <h1>
                     <TypingText
-                      delay={0.2}
+                      delay={0.4}
                       duration={1}
                       fontSize="text-3xl sm:text-5xl lg:text-7xl"
                       fontWeight="font-bold"

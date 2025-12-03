@@ -10,10 +10,8 @@ const Header = () => {
     { label: "About Me", icon: <Search size={20} />, href: "#aboutMe" },
     {
       label: "Portfolio",
-      icon: <User size={20} />,
-      onClick: () => console.log("Profile"),
+      icon: <User size={20} href="#portfolio" />,
     },
-    { label: "Settings", icon: <Settings size={20} />, href: "/settings" },
   ];
 
   return (

@@ -237,7 +237,7 @@ const Home = () => {
           </div>
         </section>
         {/* PORTFOLIO */}
-        <section className="bg-black text-white">
+        <section className="bg-black text-white" id="portfolio">
           <ScrollStack
             cards={myProjects}
             cardHeader={true}

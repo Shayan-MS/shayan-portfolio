@@ -16,8 +16,38 @@ import { LuArrowLeft } from "react-icons/lu";
 import { TypingText } from "@/src/components/lightswind/typing-text";
 import Header from "./components/home/Header";
 import ScrollFloat from "@/components/ScrollFloat";
+import ScrollStack from "@/src/components/lightswind/scroll-stack";
 
 const Home = () => {
+  const myProjects = [
+    {
+      id: 1,
+      title: "طراحی سایت فروشگاهی",
+      subtitle: "Next.js, Tailwind, MongoDB",
+      badge: "E-Commerce",
+      backgroundImage: "/img/about-me.jpg",
+      href: "/portfolio/shop-project",
+      content: <p>یک پلتفرم کامل فروشگاهی با قابلیت پرداخت آنلاین...</p>,
+    },
+    {
+      id: 2,
+      title: "دشبورد مدیریت مالی",
+      subtitle: "React, Chart.js",
+      badge: "SaaS",
+      backgroundImage: "/img/bg.jpg",
+      href: "/portfolio/dashboard-app",
+      content: <p>پنل ادمین برای مدیریت تراکنش‌های ارزی...</p>,
+    },
+    {
+      id: 3,
+      title: "طراحی سایت فروشگاهی",
+      subtitle: "Next.js, Tailwind, MongoDB",
+      badge: "E-Commerce",
+      backgroundImage: "/img/about-me.jpg",
+      href: "/portfolio/shop-project",
+      content: <p>یک پلتفرم کامل فروشگاهی با قابلیت پرداخت آنلاین...</p>,
+    },
+  ];
   return (
     <div className="min-h-screen">
       <Header />
@@ -207,6 +237,13 @@ const Home = () => {
           </div>
         </section>
         {/* PORTFOLIO */}
+        <section className="bg-black text-white">
+          <ScrollStack
+            cards={myProjects}
+            cardHeader={true}
+            backgroundColor="black"
+          />
+        </section>
       </main>
     </div>
   );

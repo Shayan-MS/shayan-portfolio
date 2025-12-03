@@ -8,10 +8,7 @@ const Header = () => {
   const menuItems = [
     { label: "Home", icon: <Home size={20} />, href: "#home" },
     { label: "About Me", icon: <Search size={20} />, href: "#aboutMe" },
-    {
-      label: "Portfolio",
-      icon: <User size={20} href="#portfolio" />,
-    },
+    { label: "Portfolio", icon: <User size={20} />, href: "#portfolio" },
   ];
 
   return (

@@ -237,12 +237,114 @@ const Home = () => {
           </div>
         </section>
         {/* PORTFOLIO */}
-        <section className="bg-black text-white" id="portfolio">
+        <section
+          className="flex flex-col items-center justify-center bg-zinc-900 text-white"
+          id="portfolio"
+        >
+          <div className="pt-30">
+            <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
+              Portfolio
+              <div className="flex justify-center mt-5">
+                <hr className="border-b-3 w-[150px] color-blue" />
+              </div>
+            </h2>
+            <div className="flex flex-col items-center space-y-6 mt-6">
+              <div>
+                <p className="text-center text-4xl">You can See my portfolio</p>
+              </div>
+              <div className="w-50">
+                <Link
+                  href={"/portfolio"}
+                  className="px-4 py-3 md:px-6 md:py-4 flex items-center border-2 cursor-pointer hover:bg-[#0043ff] transition text-xl md:text-2xl font-bold border-[#0043ff] rounded-lg text-white"
+                >
+                  All Portfolio
+                </Link>
+              </div>
+            </div>
+          </div>
           <ScrollStack
             cards={myProjects}
             cardHeader={true}
             backgroundColor="black"
           />
+        </section>
+        {/* ABOUT ME */}
+        <section className="aboutMe-bg lg:h-[40%]" id="aboutMe">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between xl:mx-32 2xl:mx-56 h-full py-40">
+            <div className="flex flex-col items-center justify-center">
+              <div
+                className="
+      relative 
+      rounded-full 
+      p-1.5
+      border-[3px] border-[#0043ff]
+      shadow-[0_0_40px_-5px_rgba(0,67,255,0.7)]
+      bg-transparent  
+  "
+              >
+                <img
+                  src="/img/aboutMePicture.png"
+                  alt="Shayan Profile"
+                  className="w-[370px] h-[370px] rounded-full object-cover"
+                />
+              </div>
+              <div className="mt-7">
+                <h3 className="text-4xl text-[#0043ff] font-light tracking-wider drop-shadow-[0_0_10px_rgba(0,67,255,0.8)]">
+                  [ ShayaN ]
+                </h3>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
+                ABOUT ME
+                <div className="flex justify-center mt-5">
+                  <hr className="border-b-3 w-[150px] color-blue" />
+                </div>
+              </h2>
+              <div className="lg:mt-5">
+                <p className="text-white text-lg lg:w-[585px] mx-5 sm:mx-10 lg:mx-0">
+                  I’m Shayan Masourians, a 20-year-old student and Full Stack
+                  Developer whose world is where the logic of code meets the art
+                  of creation. 👋 I’ve been exploring this exciting path for a
+                  year now, currently gaining experience and growing alongside
+                  the Tanil content team. What keeps me motivated isn't just
+                  writing lines of code—it's the thrill of solving complex
+                  problems. I’m passionate about building solutions that
+                  simplify life for people while crafting interfaces that are
+                  genuinely beautiful. Beyond the world of ones and zeros?
+                  You’ll likely find me recharging in nature 🌲 or immersed in
+                  the gaming world 🎮.
+                </p>
+              </div>
+              <div className="text-white flex justify-center space-y-5 space-x-5 mt-10">
+                <div>
+                  <Link
+                    href={"/instagram"}
+                    className="text-4xl lg:text-5xl text-[#4979ff] transition hover:transform-3d"
+                  >
+                    <FaInstagram className="fill-current" />
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href={"/telegram"}
+                    className="text-4xl lg:text-5xl text-[#4979ff] transition
+"
+                  >
+                    <FaTelegram />
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href={"/whatsapp"}
+                    className="text-4xl lg:text-5xl text-[#4979ff] transition"
+                  >
+                    <FaWhatsapp />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

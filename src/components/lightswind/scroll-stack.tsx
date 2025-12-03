@@ -141,10 +141,10 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
           className={`sticky top-0 w-full h-screen flex items-center 
             justify-center overflow-hidden ${backgroundColor}`} // Applied as a Tailwind class
         >
-          <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col justify-center">
+          <div className="container w-full relative bottom-[150px] px-6 lg:px-8 mx-auto h-full flex flex-col justify-center">
             <div
               ref={cardsContainerRef}
-              className="relative w-full max-w-5xl mx-auto flex-shrink-0"
+              className="relative w-full flex-shrink-0"
               style={{ height: cardHeight }}
             >
               {cards.slice(0, 5).map((card, index) => {

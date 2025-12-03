@@ -1,6 +1,16 @@
 "use client";
 import HamburgerMenuOverlay from "@/src/components/lightswind/hamburger-menu-overlay";
-import { Home, Search, User, Settings, Briefcase } from "lucide-react";
+import {
+  Home,
+  Search,
+  User,
+  Settings,
+  Briefcase,
+  Wrench,
+  Hammer,
+  Code,
+  CodeXml,
+} from "lucide-react";
 import React from "react";
 import { Link } from "react-scroll";
 
@@ -9,6 +19,7 @@ const Header = () => {
     { label: "Home", icon: <Home size={20} />, href: "#home" },
     { label: "About Me", icon: <Search size={20} />, href: "#aboutMe" },
     { label: "Portfolio", icon: <User size={20} />, href: "#portfolio" },
+    { label: "Skills", icon: <CodeXml size={20} />, href: "#hammer" },
   ];
 
   return (
@@ -60,6 +71,22 @@ const Header = () => {
                   <Briefcase />
                 </>
                 <>Portfolio</>
+              </div>
+            </Link>
+          </li>
+          <li className="flex space-x-1 rounded-xl py-2 px-4 hover:bg-[#0043ff] cursor-pointer transition">
+            <Link
+              activeClass="active-link"
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <div className="flex gap-x-1">
+                <>
+                  <CodeXml />
+                </>
+                <>Skills</>
               </div>
             </Link>
           </li>

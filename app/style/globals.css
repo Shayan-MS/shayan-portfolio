@@ -153,3 +153,13 @@ html {
   background-position: center;
   /* height: 40% !important; */
 }
+/* SKILLS SECTION */
+.skills-bg {
+  background-image: url("/img/skills-bg.jpg");
+  background-attachment: fixed !important;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 40% !important; */
+}

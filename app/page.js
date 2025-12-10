@@ -284,7 +284,9 @@ const Home = () => {
               </h2>
               <div className="flex flex-col items-center space-y-10 mt-6">
                 <div className="mx-2 sm:mx-0">
-                  <p className="text-4xl text-center">Dive into my recent projects</p>
+                  <p className="text-4xl text-center">
+                    Dive into my recent projects
+                  </p>
                 </div>
                 <div>
                   <Link
@@ -417,7 +419,7 @@ const Home = () => {
             </div>
           </section>
           {/* MESSAGE */}
-          <section className="message-bg lg:h-[40%]" id="skills">
+          <section className="message-bg lg:h-[40%]" id="sendMessage">
             <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full py-40">
               <div className="flex flex-col items-center w-full">
                 <h2 className="mx-2 sm:mx-0 text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">

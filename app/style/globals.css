@@ -156,10 +156,14 @@ html {
 /* SKILLS SECTION */
 .skills-bg {
   background-image: url("/img/skills-bg.jpg");
-  background-attachment: fixed !important;
-
+  /* background-attachment: fixed !important; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 40% !important; */
+}
+.message-bg {
+  background-image: url("/img/message-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

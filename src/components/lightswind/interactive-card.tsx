@@ -70,7 +70,7 @@ export const InteractiveCard = ({
           transformStyle: "preserve-3d",
           transition: `transform ${transitionDuration}s ${transitionEasing}`,
         }}
-        className="w-full h-full overflow-hidden shadow-lg"
+        className="w-75 sm:w-full h-full overflow-hidden shadow-lg"
       >
         {/* Background Interactive Layer */}
         <motion.div

@@ -270,27 +270,41 @@ const Home = () => {
               </div>
             </div>
           </section>
+          {/* PORTFOLIO */}
+          <section
+            className="flex flex-col items-center justify-center bg-zinc-900 text-white"
+            id="portfolio"
+          >
+            <div className="pt-30">
+              <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
+                Portfolio
+                <div className="flex justify-center mt-5">
+                  <hr className="border-b-3 w-[150px] color-blue" />
+                </div>
+              </h2>
+              <div className="flex flex-col items-center space-y-10 mt-6">
+                <div>
+                  <p className="text-4xl">Dive into my recent projects</p>
+                </div>
+                <div>
+                  <Link
+                    href={"/portfolio"}
+                    className="px-4 py-3 md:px-6 md:py-4 flex items-center border-2 cursor-pointer hover:bg-[#0043ff] transition text-xl md:text-2xl font-bold border-[#0043ff] rounded-lg text-white"
+                  >
+                    All Portfolio
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <ScrollStack
+              cards={myProjects}
+              cardHeader={true}
+              backgroundColor="black"
+            />
+          </section>
           {/* Skills */}
           <section className="skills-bg lg:h-[40%]" id="skills">
             <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full py-40">
-              {/* <div className="flex flex-col items-center justify-center">
-                <div
-                  className="
-      relative 
-      rounded-xl
-      p-1
-      border-[3px] border-[#0043ff]
-      shadow-[0_0_40px_-5px_rgba(0,67,255,1)]
-      bg-transparent  
-  "
-                >
-                  <img
-                    src="/img/shayan-skills.png"
-                    alt="Shayan Profile"
-                    className="w-[370px] h-[370px] rounded-lg object-cover"
-                  />
-                </div>
-              </div> */}
               <div className="flex flex-col items-center">
                 <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
                   SKILLS
@@ -402,39 +416,49 @@ const Home = () => {
               </div>
             </div>
           </section>
-          {/* PORTFOLIO */}
-          <section
-            className="flex flex-col items-center justify-center bg-zinc-900 text-white"
-            id="portfolio"
-          >
-            <div className="pt-30">
-              <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
-                Portfolio
+          {/* MESSAGE */}
+          <section className="message-bg lg:h-[40%]" id="skills">
+            <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full py-40">
+              <div className="flex flex-col items-center w-full">
+                <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
+                  SEND MESSAGE
+                </h2>
                 <div className="flex justify-center mt-5">
                   <hr className="border-b-3 w-[150px] color-blue" />
                 </div>
-              </h2>
-              <div className="flex flex-col items-center space-y-6 mt-6">
-                <div>
-                  <p className="text-center text-4xl">
-                    You can See my portfolio
-                  </p>
-                </div>
-                <div className="w-50">
-                  <Link
-                    href={"/portfolio"}
-                    className="px-4 py-3 md:px-6 md:py-4 flex items-center border-2 cursor-pointer hover:bg-[#0043ff] transition text-xl md:text-2xl font-bold border-[#0043ff] rounded-lg text-white"
-                  >
-                    All Portfolio
-                  </Link>
-                </div>
+                <form>
+                  <div className="flex flex-col lg:flex-row items-center w-full mt-20">
+                    <div className="space-y-3 text-center">
+                      <input
+                        className="border text-white p-3 rounded-md md:w-100 text-lg"
+                        type="text"
+                        placeholder="Full name"
+                      />
+                      <input
+                        className="border text-white p-3 rounded-md md:w-100 text-lg"
+                        type="text"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div className="mt-10">
+                      <textarea
+                        className="text-white p-3 border rounded-md w-75 md:w-100 text-lg"
+                        placeholder="your message..."
+                        rows={10}
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div className="text-center mt-6">
+                    <button
+                      type="submit"
+                      className="w-50 text-lg rounded-md text-white border-2 border-[#0043ff] hover:bg-[#0043ff] transition px-3 py-3 cursor-pointer"
+                    >
+                      SUBMIT
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
-            <ScrollStack
-              cards={myProjects}
-              cardHeader={true}
-              backgroundColor="black"
-            />
           </section>
         </main>
       </div>

@@ -420,7 +420,7 @@ const Home = () => {
           <section className="message-bg lg:h-[40%]" id="skills">
             <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full py-40">
               <div className="flex flex-col items-center w-full">
-                <h2 className="mx-1 sm:mx-0 text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
+                <h2 className="mx-2 sm:mx-0 text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
                   SEND MESSAGE
                 </h2>
                 <div className="flex justify-center mt-5">

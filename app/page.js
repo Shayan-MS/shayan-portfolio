@@ -222,7 +222,7 @@ const Home = () => {
                 <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
                   ABOUT ME
                   <div className="flex justify-center mt-5">
-                    <hr className="border-b-3 w-[150px] color-blue" />
+                    <hr className="border-b-3 w-[150px]" />
                   </div>
                 </h2>
                 <div className="lg:mt-5">
@@ -279,7 +279,7 @@ const Home = () => {
               <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
                 Portfolio
                 <div className="flex justify-center mt-5">
-                  <hr className="border-b-3 w-[150px] color-blue" />
+                  <hr className="border-b-3 w-[150px]" />
                 </div>
               </h2>
               <div className="flex flex-col items-center space-y-10 mt-6">
@@ -309,10 +309,10 @@ const Home = () => {
                 <h2 className="text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
                   SKILLS
                   <div className="flex justify-center mt-5">
-                    <hr className="border-b-3 w-[150px] color-blue" />
+                    <hr className="border-b-3 w-[150px]" />
                   </div>
                 </h2>
-                <div className="lg:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="ms-2 sm:ms-0 lg:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <InteractiveCard
                     InteractiveColor="#0043ff"
                     className="text-white border-2 border-[#f172ff] rounded-xl p-7 font-semibold text-lg"
@@ -424,7 +424,7 @@ const Home = () => {
                   SEND MESSAGE
                 </h2>
                 <div className="flex justify-center mt-5">
-                  <hr className="border-b-3 w-[150px] color-blue" />
+                  <hr className="border-b-3 w-[150px]" />
                 </div>
                 <form>
                   <div className="flex flex-col lg:flex-row items-center w-full mt-20">

@@ -29,6 +29,7 @@ import {
   Ruler,
   Shapes,
 } from "lucide-react";
+import Footer from "./components/home/Footer";
 
 const Home = () => {
   const containerRef = useRef(null);
@@ -85,7 +86,6 @@ const Home = () => {
     >
       <div className="min-h-screen">
         <Header />
-
         <main>
           {/* HOME */}
           <section
@@ -455,7 +455,7 @@ const Home = () => {
                       type="submit"
                       className="w-50 text-lg rounded-md text-white border-2 border-[#0043ff] hover:bg-[#0043ff] transition px-3 py-3 cursor-pointer"
                     >
-                      SUBMIT
+                      SEND
                     </button>
                   </div>
                 </form>
@@ -463,6 +463,8 @@ const Home = () => {
             </div>
           </section>
         </main>
+        <hr />
+        <Footer />
       </div>
     </ClickSpark>
   );

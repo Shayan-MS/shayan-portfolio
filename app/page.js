@@ -6,6 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 import {
   FaFacebook,
+  FaGithub,
   FaInstagram,
   FaLinkedin,
   FaTelegram,
@@ -186,7 +187,7 @@ const Home = () => {
                     href={"/telegram"}
                     className="text-4xl lg:text-5xl hover:text-[#2660ff] transition"
                   >
-                    <FaFacebook />
+                    <FaGithub />
                   </Link>
                 </div>
               </div>
@@ -423,7 +424,7 @@ const Home = () => {
             <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full py-40">
               <div className="flex flex-col items-center w-full">
                 <h2 className="mx-2 sm:mx-0 text-[#4073ff] text-5xl lg:text-6xl font-bold text-center font-serif my-10 lg:my-0">
-                  SEND MESSAGE
+                  CONTACT
                 </h2>
                 <div className="flex justify-center mt-5">
                   <hr className="border-b-3 w-[150px]" />

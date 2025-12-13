@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import {
   FaFacebook,
+  FaGithub,
   FaInstagram,
   FaLinkedin,
   FaTelegram,
@@ -77,7 +78,7 @@ const Footer = () => {
             href={"/telegram"}
             className="text-xl hover:text-[#2660ff] transition"
           >
-            <FaFacebook />
+            <FaGithub />
           </Link>
         </div>
       </div>{" "}

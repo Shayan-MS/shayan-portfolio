@@ -35,7 +35,12 @@ const Footer = () => {
       </div>
       <div>
         © 2025 - Designed by{" "}
-        <a href="/" className="text-[#0043ff] font-bold">
+        <a
+          href="/"
+          className="font-bold 
+    bg-gradient-to-r from-[#4073ff] to-purple-600 
+    bg-clip-text text-transparent font-bold"
+        >
           SHAYAN
         </a>
       </div>

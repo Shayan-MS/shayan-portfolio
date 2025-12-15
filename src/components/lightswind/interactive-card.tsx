@@ -61,7 +61,7 @@ export const InteractiveCard = ({
       style={{
         perspective: 1000,
       }}
-      className="relative w-[320px] aspect-[17/21] isolate"
+      className="relative sm:w-[320px] aspect-[17/21] isolate"
     >
       <motion.div
         style={{

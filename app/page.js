@@ -2,10 +2,7 @@
 import React, { useRef } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-// import ScrollReveal from "@/src/components/lightswind/scroll-reveal";
-
 import {
-  FaFacebook,
   FaGithub,
   FaInstagram,
   FaLinkedin,
@@ -16,51 +13,65 @@ import Link from "next/link";
 import { LuArrowLeft } from "react-icons/lu";
 import { TypingText } from "@/src/components/lightswind/typing-text";
 import Header from "./components/home/Header";
-import ScrollStack from "@/src/components/lightswind/scroll-stack";
 import ClickSpark from "@/components/ClickSpark";
 
 import { InteractiveCard } from "@/src/components/lightswind/interactive-card";
-import {
-  Brackets,
-  Check,
-  CodeXml,
-  Layers,
-  PanelsTopLeft,
-  PenTool,
-  Ruler,
-  Shapes,
-} from "lucide-react";
+import { Check, CodeXml, Layers, Shapes } from "lucide-react";
 import Footer from "./components/home/Footer";
 import { CountUp } from "@/src/components/lightswind/count-up";
+import { StickyScroll } from "@/src/components/ui/sticky-scroll-reveal";
 
 const Home = () => {
-  const myProjects = [
+  const content = [
     {
-      id: 1,
-      title: "Store Web",
-      subtitle: "Next.js, Tailwind, MongoDB",
-      badge: "E-Commerce",
-      backgroundImage: "/img/about-me.jpg",
-      href: "/portfolio/shop-project",
-      content: <p>یک پلتفرم کامل فروشگاهی با قابلیت پرداخت آنلاین...</p>,
+      title: "Collaborative Editing",
+      description:
+        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      content: (
+        <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+          Collaborative Editing
+        </div>
+      ),
+      href: "/portfolio1",
     },
     {
-      id: 2,
-      title: "Dashboard Admin",
-      subtitle: "React, Chart.js",
-      badge: "SaaS",
-      backgroundImage: "/img/bg.jpg",
-      href: "/portfolio/dashboard-app",
-      content: <p>پنل ادمین برای مدیریت تراکنش‌های ارزی...</p>,
+      title: "Real time changes",
+      description:
+        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      content: (
+        <div className="flex h-full w-full items-center justify-center text-white">
+          <img
+            src="/linear.webp"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+      href: "/portfolio2",
     },
     {
-      id: 3,
-      title: "Course Web",
-      subtitle: "Next.js, Tailwind, MongoDB",
-      badge: "E-Commerce",
-      backgroundImage: "/img/about-me.jpg",
-      href: "/portfolio/shop-project",
-      content: <p>یک پلتفرم کامل فروشگاهی با قابلیت پرداخت آنلاین...</p>,
+      title: "Version control",
+      description:
+        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      content: (
+        <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
+          Version control
+        </div>
+      ),
+      href: "/portfolio3",
+    },
+    {
+      title: "Running out of content",
+      description:
+        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      content: (
+        <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+          Running out of content
+        </div>
+      ),
+      href: "/portfolio4",
     },
   ];
   return (
@@ -221,11 +232,6 @@ const Home = () => {
                     className="w-[370px] h-[370px] rounded-full object-cover"
                   />
                 </div>
-                <div className="mt-5">
-                  <h3 className="text-4xl text-[#0043ff] font-light tracking-wider drop-shadow-[0_0_10px_rgba(0,67,255,0.8)]">
-                    [ ShayaN ]
-                  </h3>
-                </div>
               </div>
               <div className="flex flex-col">
                 <h2
@@ -281,42 +287,12 @@ const Home = () => {
           </section>
           {/* PORTFOLIO */}
           <section
-            className="flex flex-col items-center justify-center bg-zinc-900 text-white"
+            className="flex flex-col items-center justify-center h-[100vh] bg-[#101010] text-white"
             id="portfolio"
           >
-            <div className="pt-30">
-              <h2
-                className="text-5xl lg:text-6xl font-bold text-center my-10 lg:my-0 
-    bg-gradient-to-r from-[#4073ff] to-purple-600 
-    bg-clip-text text-transparent"
-              >
-                Portfolio
-                <div className="flex justify-center mt-5">
-                  <hr className="border-b-3 w-[150px]" />
-                </div>
-              </h2>
-              <div className="flex flex-col items-center space-y-10 mt-6">
-                <div className="mx-2 sm:mx-0">
-                  <p className="text-4xl text-center">
-                    Dive into my recent projects
-                  </p>
-                </div>
-                <div>
-                  <Link
-                    href={"/portfolio"}
-                    className="px-4 py-3 md:px-6 md:py-4 flex items-center border-2 cursor-pointer hover:bg-[#0043ff] transition text-xl md:text-2xl font-bold border-[#0043ff] rounded-lg text-white"
-                  >
-                    All Portfolio
-                  </Link>
-                </div>
-              </div>
+            <div className="w-full">
+              <StickyScroll content={content} />
             </div>
-            <ScrollStack
-              cards={myProjects}
-              cardHeader={true}
-              backgroundColor="black"
-              onCardClick={(card) => router.push(card.href)}
-            />
           </section>
           {/* Skills */}
           <section className="skills-bg lg:h-[40%]" id="skills">

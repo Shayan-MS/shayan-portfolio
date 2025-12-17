@@ -459,6 +459,7 @@ const Home = () => {
                 <hr className="border-1 w-[70px]" />
               </div>
             </div>
+
             <div className="h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
               <InfiniteMovingCards
                 items={testimonials}
@@ -466,10 +467,37 @@ const Home = () => {
                 speed="slow"
               />
             </div>
+            <div className="w-full flex justify-center">
+              <svg
+                width="50"
+                height="200"
+                viewBox="0 0 50 200"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="25"
+                  y1="10"
+                  x2="25"
+                  y2="180"
+                  stroke="white"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+
+                <path
+                  d="M 10 160 L 25 180 L 40 160"
+                  stroke="white"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
             {/* CONTACT */}
             <div
               id="sendMessage"
-              className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full pt-8 pb-40"
+              className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full pb-40"
             >
               <div className="flex flex-col items-center w-full">
                 <h2
@@ -483,7 +511,7 @@ const Home = () => {
                   <hr className="border w-[70px]" />
                 </div>
                 <form>
-                  <div className="flex flex-col lg:flex-row items-center w-full mt-20">
+                  <div className="flex flex-col lg:flex-row items-center w-full mt-10">
                     <div className="space-y-3 text-center">
                       <input
                         className="border text-white p-3 rounded-md md:w-100 text-lg"

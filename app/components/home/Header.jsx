@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="fixed inset-x-0 top-0 mt-5 md:flex md:justify-center md:items-center h-20 bg-transparent z-[9999] pointer-events-auto">
       <nav className="hidden md:flex items-center bg-white/12 backdrop-blur-sm text-white shadow-2xl ring-1 ring-black/10 px-5 py-3 relative rounded-2xl border border-white/30 transition-all duration-500">
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-3">
           <li className="flex space-x-1 rounded-xl py-2 px-4 hover:bg-[#0043ff] cursor-pointer transition">
             <Link
               activeClass="active-link"

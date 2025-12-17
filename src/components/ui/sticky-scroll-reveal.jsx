@@ -76,7 +76,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
       <div className="div relative flex items-start">
         <div className="max-w-2xl">
           {content.map((item, index) => (
-            <a href={item.href}>
+            <a href={item.href} key={index}>
               <div
                 key={item.title + index}
                 className="my-20 border border-gray-500 hover:border-gray-200 py-5 px-10 lg:px-15 lg:py-7 rounded-md transform-scale"
@@ -103,12 +103,12 @@ export const StickyScroll = ({ content, contentClassName }) => {
                 >
                   {item.description}
                 </motion.p>
-                <Link
+                {/* <a
                   href={item.href}
                   className="px-4 py-2 w-30 text-nowrap mt-3 mb-0 flex items-center border-2 cursor-pointer hover:bg-[#0043ff] transition font-bold border-[#0043ff] rounded-lg text-white"
                 >
                   View Page
-                </Link>
+                </a> */}
               </div>
             </a>
           ))}

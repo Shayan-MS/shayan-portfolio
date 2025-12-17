@@ -20,6 +20,7 @@ import { Check, CodeXml, Layers, Shapes } from "lucide-react";
 import Footer from "./components/home/Footer";
 import { CountUp } from "@/src/components/lightswind/count-up";
 import { StickyScroll } from "@/src/components/ui/sticky-scroll-reveal";
+import { InfiniteMovingCards } from "@/src/components/ui/infinite-moving-cards";
 
 const Home = () => {
   const content = [
@@ -72,6 +73,37 @@ const Home = () => {
         </div>
       ),
       href: "/portfolio4",
+    },
+  ];
+  const testimonials = [
+    {
+      quote:
+        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+      name: "Charles Dickens",
+      title: "A Tale of Two Cities",
+    },
+    {
+      quote:
+        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+      name: "William Shakespeare",
+      title: "Hamlet",
+    },
+    {
+      quote: "All that we see or seem is but a dream within a dream.",
+      name: "Edgar Allan Poe",
+      title: "A Dream Within a Dream",
+    },
+    {
+      quote:
+        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+      name: "Jane Austen",
+      title: "Pride and Prejudice",
+    },
+    {
+      quote:
+        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+      name: "Herman Melville",
+      title: "Moby-Dick",
     },
   ];
   return (
@@ -241,7 +273,7 @@ const Home = () => {
                 >
                   ABOUT ME
                   <div className="flex justify-center mt-5">
-                    <hr className="border-b-3 w-[150px]" />
+                    <hr className="border-1 w-[70px]" />
                   </div>
                 </h2>
                 <div className="lg:mt-5">
@@ -305,7 +337,7 @@ const Home = () => {
                 >
                   SKILLS
                   <div className="flex justify-center mt-5">
-                    <hr className="border-b-3 w-[150px]" />
+                    <hr className="border-1 w-[70px]" />
                   </div>
                 </h2>
                 <div className="ms-2 sm:ms-0 lg:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -412,19 +444,43 @@ const Home = () => {
               </div>
             </div>
           </section>
-          {/* MESSAGE */}
-          <section className="message-bg lg:h-[40%]" id="sendMessage">
-            <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full py-40">
+          {/* USER REVIEW */}
+          <section className="message-bg lg:h-[40%]">
+            {/* INFINITE MOVING CARDS */}
+            <div className="pt-40">
+              <h2
+                className="text-5xl lg:text-6xl font-bold text-center
+    bg-gradient-to-r from-[#4073ff] to-purple-600 
+    bg-clip-text text-transparent"
+              >
+                IN YOUR WORDS
+              </h2>
+              <div className="flex justify-center mt-5">
+                <hr className="border-1 w-[70px]" />
+              </div>
+            </div>
+            <div className="h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+              <InfiniteMovingCards
+                items={testimonials}
+                direction="right"
+                speed="slow"
+              />
+            </div>
+            {/* CONTACT */}
+            <div
+              id="sendMessage"
+              className="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center xl:mx-32 2xl:mx-56 h-full pt-8 pb-40"
+            >
               <div className="flex flex-col items-center w-full">
                 <h2
-                  className="text-5xl lg:text-6xl font-bold text-center my-10 lg:my-0 
+                  className="text-5xl lg:text-6xl font-bold text-center my-3 sm:my-10 lg:my-0 
     bg-gradient-to-r from-[#4073ff] to-purple-600 
     bg-clip-text text-transparent"
                 >
                   CONTACT
                 </h2>
-                <div className="flex justify-center mt-5">
-                  <hr className="border-b-3 w-[150px]" />
+                <div className="flex justify-center sm:mt-5">
+                  <hr className="border w-[70px]" />
                 </div>
                 <form>
                   <div className="flex flex-col lg:flex-row items-center w-full mt-20">

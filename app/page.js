@@ -481,16 +481,16 @@ const Home = () => {
                   x2="25"
                   y2="180"
                   stroke="white"
-                  stroke-width="5"
-                  stroke-linecap="round"
+                  strokeWidth="5"
+                  strokeLinecap="round"
                 />
 
                 <path
                   d="M 10 160 L 25 180 L 40 160"
                   stroke="white"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
